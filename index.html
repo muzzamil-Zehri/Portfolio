@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+<html lang="en">
+<body>
+  <div class="container">
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Muzzamil</p>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="mode">
+        <div class="moon-sun" id="toggle-switch">
+            <i class="fa fa-moon" id="moon"></i>
+            <i class="fa fa-sun" id="sun"></i>
+        </div>
+    </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+ 
+    <main class="wrapper">
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="hello">
+            <p>Hello I'm</p>
+          </div>
+          <div class="featured-name">
+            <span class="typedText"></span>
+          </div>
+          <div class="featured-text-info">
+            <p>My name is Muzzamil ! I'm a front-end developer with over 6+ months of experience.
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn blue-btn">Hire Me</button>
+            <button class="btn" onclick="downloadCV()">Download CV <i class="uil uil-file-alt"></i></button>
+          </div>
+          
+          <div class="social_icons">
+            <div class="icon_circle"></div>
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-behance-alt"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="boy.png" alt="">
+          </div>
+        </div>
+
+      </section>
+      <!-- -------------- ABOUT BOX ---------------- -->
+      <section class="section" id="about">
+        <div class="top-header">
+          <h1>About Me</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <figure class="about-me">
+                <figcaption>
+                  <img src="profile.png" alt="" class="profile" />
+                  <h2>Front-end Developer</h2>
+                  <p>My name is Muzzamil ! I'm a front-end developer with over 6+ months of experience.</p>
+              </figure>
+              <button class="about-me-btn">Hire Me</button>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-box">
+                <span class="title">HTML</span>
+                <div class="skill-bar">
+                    <span class="skill-per html">
+                        <span class="tooltip">80%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">CSS</span>
+                <div class="skill-bar">
+                    <span class="skill-per css">
+                        <span class="tooltip">70%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">JavaScript</span>
+              <div class="skill-bar">
+                  <span class="skill-per Python">
+                      <span class="tooltip">50%</span>
+                  </span>
+              </div>
+          </div>
+            <div class="skill-box">
+                <span class="title">Figma</span>
+                <div class="skill-bar">
+                    <span class="skill-per javascript">
+                        <span class="tooltip">40%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">SEO</span>
+              <div class="skill-bar">
+                  <span class="skill-per php">
+                      <span class="tooltip">30%</span>
+                  </span>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- PROJECT BOX ---------------- -->
+
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Projects</h1>
+        </div>
+        <div class="project-container">
+          <div class="project-box">
+            <i class="uil uil-briefcase-alt"></i>
+            <h3>Completed</h3>
+            <label>20+ Finished Projects</label>
+          </div>
+          <div class="project-box">
+            <i class="uil uil-users-alt"></i>
+            <h3>Clients</h3>
+            <label>80+ Happy Clients</label>
+          </div>
+          <div class="project-box">
+            <i class="uil uil-award"></i>
+            <h3>Experience</h3>
+            <label>6+ Months in front-end development</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- CONTACT BOX ---------------- -->
+
+      <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Let's Work Together</h1>
+          <span>Do you have a project in your mind, contact me here</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-envelope"></i>zehrimuzzamil@gmail.com</p>
+              <p><i class="uil uil-phone"></i> Phone:+923200336650</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-control">
+              <div class="form-inputs">
+                <input type="text" class="input-field" placeholder="Your Name">
+                <input type="text" class="input-field" placeholder="Your Email">
+              </div>
+              <div class="text-area">
+                <input type="text" class="input-subject" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+              </div>
+              <div class="form-button">
+                <button class="btn">Send <i class="uil uil-message"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><i class="uil uil-instagram"></i></div>
+        <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+        <div class="icon"><i class="uil uil-dribbble"></i></div>
+        <div class="icon"><i class="uil uil-github-alt"></i></div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ----- TYPING JS Link ----- -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- ----- SCROLL REVEAL JS Link----- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
